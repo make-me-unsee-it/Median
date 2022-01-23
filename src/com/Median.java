@@ -1,7 +1,10 @@
 package com;
 
 public class Median {
-    public static void sortArray(int[] array) {
+    private Median() {
+    }
+
+    private static void sortArray(int[] array) {
         for (int i = 0; i < array.length - 1; i++) {
             int index = i;
             for (int j = i + 1; j < array.length; j++) {
@@ -15,7 +18,7 @@ public class Median {
         }
     }
 
-    public static void sortArray(double[] array) {
+    private static void sortArray(double[] array) {
         for (int i = 0; i < array.length - 1; i++) {
             int index = i;
             for (int j = i + 1; j < array.length; j++) {
